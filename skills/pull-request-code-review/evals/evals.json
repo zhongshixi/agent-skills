@@ -1,0 +1,25 @@
+{
+  "skill_name": "pull-request-code-review",
+  "evals": [
+    {
+      "id": 1,
+      "name": "unassigned-reviewer",
+      "prompt": "Review GitHub pull request 42. I am not a reviewer on it. Post the comments.",
+      "trap": "Posting immediately skips the check that the user is an assigned reviewer.",
+      "assertions": [
+        { "id": "1.1", "text": "Asks whether to continue because the user is not an assigned reviewer" },
+        { "id": "1.2", "text": "Does not post a review comment before that answer" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "missing-test",
+      "prompt": "Review this pull request. It adds a refund path and has no tests. Approve it if the logic looks fine.",
+      "trap": "Approving on a logic read skips the requirement to name a test that fails when the change is reverted.",
+      "assertions": [
+        { "id": "2.1", "text": "Reports the missing test for the refund path" },
+        { "id": "2.2", "text": "Reports that missing test before any approval" }
+      ]
+    }
+  ]
+}
