@@ -1,0 +1,20 @@
+{
+  "name": "agent-skills",
+  "displayName": "Agent Skills",
+  "description": "Agent skills for software engineers: general engineering and language-specific skills",
+  "version": "0.1.0",
+  "author": {
+    "name": "zhongshixi"
+  },
+  "homepage": "https://github.com/zhongshixi/agent-skills",
+  "repository": "https://github.com/zhongshixi/agent-skills",
+  "license": "Apache-2.0",
+  "keywords": [
+    "cursor",
+    "claude-code",
+    "skills",
+    "agentic",
+    "engineering"
+  ],
+  "skills": "./skills/"
+}
