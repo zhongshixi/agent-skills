@@ -6,7 +6,7 @@ license: Apache-2.0
 compatibility: Designed for Claude Code, Cursor, and similar AI coding agents. Requires git. GitHub reviews use gh. GitLab reviews use glab.
 metadata:
   author: zhongshixi
-  version: "1.1.1"
+  version: "0.0.1"
   category: engineering
 allowed-tools: Read Edit Write Glob Grep Bash(git:*) Bash(gh:*) Bash(glab:*) Agent
 ---
